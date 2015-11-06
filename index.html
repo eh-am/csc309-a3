@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Assignment 3</title>
+</head>
+<body>
+	<div >
+		<h1>How to use</h1>
+		<p>Click on the buttons on the right to make the AJAX calls. The result will be displayed here.</p>
+		<p>Current REST API:</p>
+		<ul>
+			<li><a href="tweets/">tweets/</a></li>
+			<li><a href="users/">users/</a></li>
+			<li><a href="tweets?field=external_links">tweets?field=external_links</a></li>
+			<li>tweets/{id} Example: <a href="tweets/311828115477372928">tweets/311828115477372928</a></li>
+			<li>users/{username} Example: <a href="users/timoreilly">users/timoreilly</a></li>
+			<li>users/{username}/tweets Example: <a href="users/SarahPrevette/tweets">users/SarahPrevette</a></li>
+		</ul>
+
+		<h1>Result of AJAX call:</h1>
+		<pre id="content"></pre>
+	</div>
+	<div class="side-panel">
+		<div><button id="get-all-tweets">Get all tweets</button></div>
+		<div><button id ="get-all-users">Get all known users</button></div>
+		<div><button id="get-all-external-links">Get all external links</button></div>
+		<div><input type="text" id="input-specific-tweet" placeholder="Type a tweet id"><button id="get-specific-tweet">Get specific tweet</button></div>
+		<div><input type="text" id="input-specific-user" placeholder="Type an username"><button id="get-specific-user">Get specific user</button></div>
+		<div><input type="text" id="input-specific-user-tweets" placeholder="Type an username"><button id="get-specific-user-tweets">Get Tweets from user</button></div>
+
+	</div>
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

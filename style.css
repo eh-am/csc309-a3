@@ -1,0 +1,9 @@
+.side-panel{
+	position: fixed;
+	right: 0; 
+
+	height: 50%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
